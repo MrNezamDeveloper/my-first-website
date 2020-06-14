@@ -1,0 +1,247 @@
+
+header a {
+	color: #ffffff;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-decoration: none;
+	background-color: transparent;
+}
+header{
+	right: 0px;
+	left: 0px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #007bff;
+	background-color:transparent;
+}
+
+.bg-black{background-color:#000000}
+/*----------text-h3-------------------*/
+.text-h3{
+	margin-top:-200px;
+	margin-left:40px;}
+/*---------------------------------------------------------- images title -------------------------------------------*/
+/*------------------- home --------------------*/
+.img-labtop{
+	background-image:url(../img/home-slider-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------- about ------------------*/
+.img-about{
+	background-image:url(../img/about-us-title-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------- services ------------------*/
+.img-aservices{
+	background-image: url(../img/services-title-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------- PRODUCT  ------------------*/
+.img-product{
+	background-image: url(../img/products-title-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------- PEOPLE  ------------------*/
+.img-PEOPLE{
+	background-image: url(../img/people-title-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------- CONTACT  ------------------*/
+.img-contact{
+	background-image: url(../img/contact-us-title-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 700px;
+	opacity: 1;
+	visibility: inherit;
+}
+/*------------------video------------------------*/
+.img-video{
+	background-image:url(../img/video-background-image.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 500px;
+	opacity: 1;
+	visibility: inherit;
+	}
+/*------------------------------------------------ box ----------------------------------------------------*/
+/*---------- box-shadow-------------------*/
+.shadow-lg1{box-shadow: 0 10px 60px 0px #4091fb;}
+.shadow-lg2{box-shadow: 0 10px 60px 0px #7fe7c6;}
+.shadow-lg3{box-shadow: 0 10px 60px 0px #df8cc4;}
+.shadow-lg4{box-shadow: 0 10px 60px 0px #f4a382;}
+/*---------- border-radius-------------------*/
+.rounded {
+	border-radius: 1.25rem !important;
+}
+/*---------- margin- -------------------*/
+.margin-{margin-top:-100px;}
+.margin-24{margin-top:-24px;}
+/*------------------------------ border -----------------------------------------*/
+.border-left {
+	border-left: 3px solid #076cf0 !important;
+}	
+	
+
+/*------------------------------ progress-----------------------------------------*/
+.progress {
+	height: 0.4rem;
+}
+element {
+	height: 5px;
+	background-color: rgb(242, 102, 47);
+	border: 1px solid rgb(242, 102, 47);
+	width: 92%;
+}
+/*------------------------------ :hover-----------------------------------------*/
+.btn{transition:all 0.7s;}
+.btn:hover {
+	 color: hsla(0,0%,100%,1.00);
+	 background-color:hsla(0,0%,0%,1.00);
+	 border-color:transparent;
+	 transition:all 0.7s;
+}
+
+.opacity{
+	opacity:0.5;
+	transition: opacity 0.3s;
+	}
+a:hover {
+	opacity:1.0;
+}
+	
+.btnform:hover{
+	background-color:hsla(0,0%,100%,1.00);
+	color:hsla(216,100%,50%,1.00);
+	border-color:transparent;
+}
+	
+.fa-play-circle:hover {
+	color:#2862E8;
+}
+.nav-link:focus, .nav-link:hover {
+	text-decoration: none;
+	transition: all 0.2s;
+}
+/*------------ ------------- ------------- form  ---------------------------------------*/
+.form-control::placeholder {
+	color: #fff;
+	opacity: 1;
+}
+.width400{width:400px;}
+.width1200{width:1200px;}
+.form-control:focus {
+	color: #FFFFFF;
+	background-color:transparent;
+	border-color: transparent;
+	outline: 0;
+	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, 0);
+}
+.form-control:focus {
+	border-bottom: 1px solid white;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(1.5em + .75rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #fff;
+	background-color: #fff0;
+	background-clip: padding-box;
+	border: 1px solid #fff0;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	border-bottom: 1px solid;
+}
+
+/*-------------------   @media --------------------*/
+
+@media only screen and (min-width: 576px) { 
+	.font80{
+		font-size:80px;
+		font-weight: bold;
+		}
+	.margintop{margin-top:100px;}
+	
+ }
+ 
+ @media only screen and (max-width: 992px){
+	 .bg-white-md{
+	 			background-color:#FFFFFF;
+				color:#000000;
+				}
+ }
+ @media only screen and (max-width: 576px) {
+	 .margin-xs{
+		 margin-top:50px;
+		 }
+	 }
+/*-------------------   navbar --------------------*/
+body > header > div > div > div > div > div.col-md-9.col-6{
+    margin-top: 65px;
+    position: absolute;
+    right: 0px;
+}
+#navbarNav > ul > li.nav-item > a{
+    color: white !important;
+}
+@media (min-width: 992px)
+.navbar-expand-lg .navbar-nav {
+    margin-inline-start: auto;
+}
+body > header > div > div > div > div > div.col-md-9.col-6 > nav > button{
+    position: absolute;
+    right: 0px;
+}
+#navbarNav > ul{
+    position: absolute;
+    right: 0px;
+    margin: 20px;
+    background-color: rgba(128, 128, 128, 0.15);
+    border-radius: 10px;
+}
+#navbarNav > ul > li.nav-item{
+    padding: 5px 20px;
+}
+.navbar-light .navbar-nav .nav-link.disabled{
+    opacity: .5;
+    background-color: dimgray;
+    border-radius: 50%;
+}
