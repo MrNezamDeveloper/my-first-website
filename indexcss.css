@@ -600,25 +600,46 @@ section:nth-of-type(4)>article>ul>li>a>img:hover{
     }
     .menu>figure{margin: 5px}
     .menu>figure>figcaption{font-size: 7px;}
+    section:nth-of-type(1)>div{height: 200px}
+    section:nth-of-type(2)>article>ul>li>a>figure>figcaption>h3{margin-bottom: 0px}
+    section:nth-of-type(2)>article>ul>li>a>figure>figcaption>p{padding: 0px}
+    section:nth-of-type(3)>.skill>.logos>ul>li{
+        height: 50px;
+        width: 50px;
+    }
 }
 
 
 @media only screen and (min-width: 576px) {
   body>.main>.menu>.menur>ul>li{font-size: 20px}
+    section:nth-of-type(1)>div{height:200px}
+    section:nth-of-type(3)>.skill>.logos>ul>li{
+        height: 70px;
+        width: 70px;
+    }
 }
 
 
 
 @media only screen and (min-width: 768px) {
   body>.main>.menu>.menur>ul>li{font-size: 30px}
+    section:nth-of-type(1)>div{height:350px}
+    section:nth-of-type(3)>.skill>.logos>ul>li{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 
 @media only screen and (min-width: 992px) {
   body>.main>.menu>.menur>ul>li{font-size: 30px}
+        section:nth-of-type(1)>div{height:350px}
+
 }
 
 
 @media only screen and (min-width: 1200px) {
   body>.main>.menu>.menur>ul>li{font-size: 30px}
+        section:nth-of-type(1)>div{height:350px}
+
 }
