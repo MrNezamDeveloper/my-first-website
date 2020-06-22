@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(14deg, gold, purple, gold);
+        }
+        #game{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid gray;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #game>li{
+            flex-basis: 33.33%;
+                height: 33.33%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 20px;
+            font-family: arial;
+            border: 1px solid rgba(128, 128, 128, 0.58);
+            list-style-type: none;
+            background: white;
+            cursor: pointer;
+            position: relative;
+        }
+        #game>li>b{
+            opacity: .18;
+            font-size: 40px;
+        }
+        #game>li>b,
+        #game>li>span{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+        top: 0;left: 0;}
+        #game>li>span{
+            z-index: -1;
+/*            background: rgba(255, 0, 0, 0.42)*/
+        }
+        .para1{
+            z-index: 999 !important
+        }
+    </style>
+</head>
+<body>
+    <ul id="game">
+        <li><b>1</b><span></span></li>
+        <li><b>2</b><span></span></li>
+        <li><b>3</b><span></span></li>
+        <li><b>4</b><span></span></li>
+        <li><b>5</b><span></span></li>
+        <li><b>6</b><span></span></li>
+        <li><b>7</b><span></span></li>
+        <li><b>8</b><span></span></li>
+        <li><b>9</b><span></span></li>
+    </ul>
+    <script>
+        $(function(){
+            var k=0;
+            var win = 0;
+            var i=0;
+            var mygame = new Array();
+            $("li>b").click(function(){
+                k++;
+                if(i==0){
+                    $(this).text("x");
+                    i++;
+                }
+                else{
+                    $(this).text("o");
+                    i--;
+                }
+                $(this).css("opacity", "1")
+                $(this).siblings("span").addClass("para1");
+//                alert("adam bash")
+
+                for(z=0; z<=8; z++){
+                    var temp = $("#game>li:nth-of-type("+(z+1)+")>b").text();
+                    mygame[z]=temp;
+                }
+                console.log(mygame)
+                
+                if(mygame[0]==mygame[1] && mygame[0]==mygame[2]){
+                    $("#game>li:nth-of-type(1),#game>li:nth-of-type(2),#game>li:nth-of-type(3)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[3]==mygame[4] && mygame[3]==mygame[5]){
+                    $("#game>li:nth-of-type(4),#game>li:nth-of-type(5),#game>li:nth-of-type(6)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[6]==mygame[7] && mygame[6]==mygame[8]){
+                    $("#game>li:nth-of-type(7),#game>li:nth-of-type(8),#game>li:nth-of-type(9)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[0]==mygame[3] && mygame[0]==mygame[6]){
+                    $("#game>li:nth-of-type(1),#game>li:nth-of-type(4),#game>li:nth-of-type(7)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[1]==mygame[4] && mygame[1]==mygame[7]){
+                    $("#game>li:nth-of-type(2),#game>li:nth-of-type(5),#game>li:nth-of-type(8)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[2]==mygame[5] && mygame[2]==mygame[8]){
+                    $("#game>li:nth-of-type(3),#game>li:nth-of-type(6),#game>li:nth-of-type(9)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[0]==mygame[4] && mygame[0]==mygame[8]){
+                    $("#game>li:nth-of-type(1),#game>li:nth-of-type(5),#game>li:nth-of-type(9)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                                
+                if(mygame[2]==mygame[4] && mygame[2]==mygame[6]){
+                    $("#game>li:nth-of-type(3),#game>li:nth-of-type(5),#game>li:nth-of-type(7)").children("b").css("background", "green");
+                    win++;
+                }
+                
+                if(win>0){
+//                    alert("user " + $(this).text() + " won")
+//                    location.reload();
+                    for(z=1; z<=9; z++){
+                        $("#game>li:nth-of-type("+z+")>span").css("z-index", "999")
+                    }
+                }
+                    else if(k==9){
+                    location.reload();
+                }
+                
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>
