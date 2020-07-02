@@ -92,18 +92,14 @@ section{
     padding: 20px;
     cursor: pointer;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    
     font-weight: 400;
     transition: 300ms;
 }
-.menu>.menur>ul>li:hover{
-    border-radius: 80%;
+.menu>.menur>ul>li:nth-of-type(1){
     color: white;
 }
-
-.menu>.menur>ul>li:nth-of-type(1){
-    background-color: white;
-    border-radius: 50%;
+.menu>.menur>ul>li:hover{
+    color: white;
 }
 
 .bolet{
@@ -117,7 +113,7 @@ section{
     display: flex;
 }
 .bolet>ul{
-    height: 70%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,7 +208,7 @@ section:nth-of-type(1)>div>ul>li{
     background-size: cover;
     color: white;
     background-position: center;
-    filter: grayscale(80%);
+    filter: grayscale(100%);
     transition: .5s;
 }
 section:nth-of-type(1)>div>ul>li:hover{
@@ -306,7 +302,7 @@ section:nth-of-type(2)>article>ul>li>p{
     position: absolute;
     bottom: 400px;
     font-family: serif;
-    font-size:4vw;
+    font-size:2.2vw;
     font-weight: bolder;
     color: black;
 }
@@ -364,10 +360,8 @@ section:nth-of-type(2)>article>ul>li>a>figure>img:hover{
     overflow: hidden;
 }
 section:nth-of-type(2)>article>ul>li>a>figure>figcaption{
-    height:40%;
     padding: 5px;
     text-align: center;
-    text-shadow: 0 0 6px white;
 }
 section:nth-of-type(2)>article>ul>li>a>figure>figcaption>h3{
     font-size: 20px;
@@ -405,6 +399,7 @@ section:nth-of-type(3)>.video{
   height: 100%;
   transform: scale(1.5);
   filter: blur(7px);
+    filter: grayscale(1);
   z-index: 1;
 }
 
@@ -432,7 +427,7 @@ section:nth-of-type(3)>.skill .notfig{
 }
 section:nth-of-type(3)>.skill .notfig>span{
     font-family:fantasy;
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 10px auto;
     text-shadow: 0 0 6px white;
     text-transform: capitalize;
@@ -488,11 +483,10 @@ section:nth-of-type(3)>.skill>.logos>ul>li{
     cursor: pointer;
     transition: 1s;
     opacity: 0;
-    
-     
+    filter: grayscale(1);
 }
-.logos>ul>li:hover{
-    filter: brightness(3)    
+section:nth-of-type(3)>.skill>.logos>ul>li:hover{
+    filter: brightness(1);
 }
 .logos>ul>li:nth-of-type(1){
     background-image: url(img/svg/boot.gif);
@@ -523,7 +517,6 @@ section:nth-of-type(4)>article{
     justify-content: center;
     align-items: center;
 }
-
 section:nth-of-type(4)>article>ul{
     display: flex;
     justify-content: center;
@@ -534,15 +527,12 @@ section:nth-of-type(4)>article>ul{
     margin-top:260px;
     padding: 0px 0px 30px 0px;
 }
-
 section:nth-of-type(4)>article>ul::-webkit-scrollbar {
     display: none;
 }
-
 section:nth-of-type(4)>article>ul{
     -ms-overflow-style: none;
 }
-
 section:nth-of-type(4)>article>ul>li{
     width: 350px;
     height: 250px;
@@ -553,19 +543,16 @@ section:nth-of-type(4)>article>ul>li{
     align-items: center;
     padding: 3px;
 }
-
 section:nth-of-type(4)>article>ul>li>a{
     height: 100%;
     width: 100%;
 }
-
 section:nth-of-type(4)>article>ul>li>a>img{
     filter: grayscale(100%);
     transition: .3s;
     height: 100%;
     width: 100%;
 }
-
 section:nth-of-type(4)>article>ul>li>a>img:hover{
     filter: grayscale(0%);
 }
@@ -611,7 +598,7 @@ section:nth-of-type(4)>article>ul>li>a>img:hover{
 
 
 @media only screen and (min-width: 576px) {
-  body>.main>.menu>.menur>ul>li{font-size: 20px}
+  body>.main>.menu>.menur>ul>li{font-size: 10px}
     section:nth-of-type(1)>div{height:200px}
     section:nth-of-type(3)>.skill>.logos>ul>li{
         height: 70px;
@@ -622,7 +609,7 @@ section:nth-of-type(4)>article>ul>li>a>img:hover{
 
 
 @media only screen and (min-width: 768px) {
-  body>.main>.menu>.menur>ul>li{font-size: 30px}
+  body>.main>.menu>.menur>ul>li{font-size: 15px}
     section:nth-of-type(1)>div{height:350px}
     section:nth-of-type(3)>.skill>.logos>ul>li{
         height: 100px;
@@ -632,14 +619,14 @@ section:nth-of-type(4)>article>ul>li>a>img:hover{
 
 
 @media only screen and (min-width: 992px) {
-  body>.main>.menu>.menur>ul>li{font-size: 30px}
+  body>.main>.menu>.menur>ul>li{font-size: 20px}
         section:nth-of-type(1)>div{height:350px}
 
 }
 
 
 @media only screen and (min-width: 1200px) {
-  body>.main>.menu>.menur>ul>li{font-size: 30px}
+  body>.main>.menu>.menur>ul>li{font-size: 25px}
         section:nth-of-type(1)>div{height:350px}
 
 }
